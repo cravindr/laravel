@@ -21,7 +21,7 @@ Route::get('/gettransaction','TrasactionController@index' );
 Route::get('/customerlist','CustomerController@list' );
 Route::post('/save','CustomerController@save' );
 Route::get('/getplace','PlaceController@getPlace' );
-Route::get('/register',function (){
+Route::get('/customer/register',function (){
     return view('customer.register');
 });
 
@@ -55,6 +55,7 @@ Route::get('/place',function (){
 });
 
 Route::get('/serversideplace','PlaceController@serversideplace' );
+
 Route::get('/registerplace',function (){
     return view('place.register');
 });
@@ -68,3 +69,18 @@ Route::get('/editsessfield','PlaceController@EditsessField');
 Route::get('select2-autocomplete', 'Select2AutocompleteController@layout');
 Route::get('select2-autocomplete-ajax', 'Select2AutocompleteController@dataAjax');
 Route::get('select2-groupdata', 'Select2AutocompleteController@groupData');
+
+/*Customer Routs*/
+
+Route::get('/serversideCustomer','CustomerController@serversidecustomer' );
+Route::get('/customer',function (){
+    return view('customer.index');
+
+});
+
+Route::post('/customer/assignid','CustomerController@AssignId');
+Route::get('/customer/edit','CustomerController@Edit');
+Route::post('/customer/update','CustomerController@Update' );
+Route::post('/customer/delete','CustomerController@Delete' );
+
+
