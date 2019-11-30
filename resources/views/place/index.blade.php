@@ -1,5 +1,12 @@
-@extends('themes.theme1');
+@extends('themes.adminlte');
 @include('place.edit')
+
+@section('place-menu','active')
+@section('menu-open-place','menu-open')
+@section('place-list','active')
+@section('place-list-color','text-info')
+@section('breadcrumb','Place List')
+@section('title','Place List')
 
 @section('css')
     <link href="{{asset('asset/DataTables/datatables.min.css')}}">
@@ -7,6 +14,22 @@
 @endsection
 
 @section('content')
+
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{session('success')}}
+        </div>
+    @endif
+
+
+
+    @if(session('faliled'))
+        <div class="alert alert-danger">
+            {{session('faliled')}}
+        </div>
+    @endif
+
+
     <div class="col-lg-12">
         <table id="place" class="table table-bordered">
             <thead>
@@ -96,7 +119,7 @@
 
                if(data==1)
                {
-                 window.location.href= "{{ URL::to('editsessfield') }}";
+                 window.location.href= "{{ URL::to('place/update') }}";
                }
            });
         }

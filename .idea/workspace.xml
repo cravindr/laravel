@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61cdc267-8fbc-4ab0-8f0a-3b3aa40789e6" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="61cdc267-8fbc-4ab0-8f0a-3b3aa40789e6" name="Default Changelist" comment="30/11/19 completed">
+      <change afterPath="$PROJECT_DIR$/resources/views/dynamictable/bootstrap.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dynamictable/button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dynamictable/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dynamictable/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dynamictable/row.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dynamictable/script.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pawn/bootstrap.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pawn/button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pawn/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pawn/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pawn/row.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pawn/script.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/themes/adminlte.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/themes/navebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/themes/side-menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/themes/top-menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07b7f3fb-072c-4ae0-b206-b5d37ee3074e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/07b7f3fb-072c-4ae0-b206-b5d37ee3074e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-source.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-source.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlaceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PlaceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/place/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/place/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/place/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/place/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/place/register1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/place/register1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +71,20 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="chit_fund: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="chit_fund@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="chit_fund: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="item_master: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="chit_fund@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="chit_fund: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="pawn_item_detail: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -52,7 +96,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/public/asset/select2-bootstrap4-theme" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -146,30 +190,25 @@
   </component>
   <component name="ProjectId" id="1TEZjVolPUF9RegMVx3TtFlrgOx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/place" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/place" />
+      <recent name="$PROJECT_DIR$/resources/views/pawn" />
       <recent name="$PROJECT_DIR$/SQl Queries" />
+      <recent name="$PROJECT_DIR$/resources/views/place" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -178,23 +217,15 @@
     </configuration>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a479e20c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a479e20c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@9a3757" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -220,7 +251,60 @@
       <workItem from="1573708992421" duration="7827000" />
       <workItem from="1573795110445" duration="5349000" />
       <workItem from="1574057392682" duration="618000" />
+      <workItem from="1574148195947" duration="600000" />
+      <workItem from="1574233276705" duration="16276000" />
+      <workItem from="1574401461241" duration="1225000" />
+      <workItem from="1574488975909" duration="7112000" />
+      <workItem from="1574658852279" duration="5439000" />
+      <workItem from="1574747231497" duration="7874000" />
+      <workItem from="1574836895646" duration="10670000" />
+      <workItem from="1574919048865" duration="3560000" />
+      <workItem from="1574933916722" duration="17025000" />
+      <workItem from="1575094574042" duration="246000" />
     </task>
+    <task id="LOCAL-00001" summary="20/11/19 completed">
+      <created>1574249610691</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574249610691</updated>
+    </task>
+    <task id="LOCAL-00002" summary="20/11/19 completed">
+      <created>1574249691910</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574249691910</updated>
+    </task>
+    <task id="LOCAL-00003" summary="20/11/19 completed">
+      <created>1574249742722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574249742722</updated>
+    </task>
+    <task id="LOCAL-00004" summary="20/11/19 completed">
+      <created>1574249755199</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574249755199</updated>
+    </task>
+    <task id="LOCAL-00005" summary="20/11/19 completed">
+      <created>1574249778368</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574249778368</updated>
+    </task>
+    <task id="LOCAL-00006" summary="20/11/19 completed">
+      <created>1574249843989</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574249843989</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +322,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20/11/19 completed" />
+    <MESSAGE value="30/11/19 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="30/11/19 completed" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="365" y="41" width="860" height="814" key="CommitChangelistDialog2" timestamp="1575094684914">
+      <screen x="0" y="27" width="1600" height="835" />
+    </state>
+    <state x="365" y="41" width="860" height="814" key="CommitChangelistDialog2/0.27.1600.835@0.27.1600.835" timestamp="1575094684914" />
+    <state x="410" y="237" width="769" height="422" key="git4idea.merge.GitMergeDialog" timestamp="1575094716581">
+      <screen x="0" y="27" width="1600" height="835" />
+    </state>
+    <state x="410" y="237" width="769" height="422" key="git4idea.merge.GitMergeDialog/0.27.1600.835@0.27.1600.835" timestamp="1575094716581" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

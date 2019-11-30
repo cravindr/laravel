@@ -1,9 +1,18 @@
 @inject('places', 'App\Http\Controllers\PlaceController')
-@extends('themes.theme1')
+@extends('themes.adminlte')
+
+@section('customer-menu','active')
+@section('menu-open-customer','menu-open')
+@section('customer-list','active')
+@section('customer-list-color','text-info')
+@section('breadcrumb','Update Customer')
+@section('title','Update Customer')
+
+
 @section('content')
     <div class="row">
 
-        <div class="col-lg-5 offset-4">
+        <div class="col-lg-5 offset-2">
             {{--Alert Message Print start--}}
             @if(session('success'))
                 <div class="alert alert-success">

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('themes.adminlte');
 
 
 });
@@ -49,21 +49,23 @@ Route::get('/test',function (){
 });
 
 
+
+
+Route::get('/serversideplace','PlaceController@serversideplace' );
 Route::get('/place',function (){
     return view('place.index');
 
 });
 
-Route::get('/serversideplace','PlaceController@serversideplace' );
-
-Route::get('/registerplace',function (){
+Route::get('/place/register',function (){
     return view('place.register');
 });
 Route::post('/saveplace','PlaceController@save' );
+Route::post('/updateplace','PlaceController@update' );
 Route::post('/editplace','PlaceController@Edit');
 Route::get('/editplace1/{id}','PlaceController@Edit1');
 Route::post('/editsess','PlaceController@Editsess');
-Route::get('/editsessfield','PlaceController@EditsessField');
+Route::get('/place/update','PlaceController@EditsessField');
 
 
 Route::get('select2-autocomplete', 'Select2AutocompleteController@layout');
@@ -82,5 +84,20 @@ Route::post('/customer/assignid','CustomerController@AssignId');
 Route::get('/customer/edit','CustomerController@Edit');
 Route::post('/customer/update','CustomerController@Update' );
 Route::post('/customer/delete','CustomerController@Delete' );
+
+Route::get('/dynamictable',function (){
+    return view('dynamictable.index');
+
+});
+
+Route::post('saveform', 'PlaceController@testform');
+
+        //;
+/**************Pawn *******************/
+Route::get('/pawn','PawnController@showPawn');
+
+
+Route::post('pawn/save', 'PawnController@saveform');
+
 
 

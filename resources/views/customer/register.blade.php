@@ -1,5 +1,11 @@
 @inject('places', 'App\Http\Controllers\PlaceController')
-@extends('themes.theme1')
+@extends('themes.adminlte')
+@section('customer-menu','active')
+@section('menu-open-customer','menu-open')
+@section('customer-register','active')
+@section('customer-register-color','text-info')
+@section('breadcrumb','Register Customer')
+@section('title','Register Customer')
 @section('content')
     <div class="row">
 

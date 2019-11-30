@@ -1,4 +1,12 @@
-@extends('themes.theme1');
+@extends('themes.adminlte');
+
+
+@section('place-menu','active')
+@section('menu-open-place','menu-open')
+@section('place-register','active')
+@section('place-register-color','text-info')
+@section('breadcrumb','Register Place ')
+@section('title','Register Place ')
 
 @section('css')
 @endsection

@@ -47,6 +47,33 @@ class PlaceController extends Controller
 
     }
 
+    public function update(Request $request)
+    {
+        $name=$request->input('name');
+        $id=$request->input('id');
+        $data=array(
+
+            'short_code'=> $request->input('short_code'),
+            'name'=> $request->input('name'),
+            'status'=> 'active'
+        );
+
+
+
+        $ret=DB::table('place')->where('id',$id)->update($data);
+
+        if($ret==1)
+        {
+            return redirect('place')->with("success","The place $name Update successfully");
+        }
+        else
+        {
+            return redirect('place')->with("failed","The place $name not Update. Error !!!");
+        }
+
+
+    }
+
     public function Edit()
     {
         $id = request('id');
@@ -97,6 +124,18 @@ class PlaceController extends Controller
 
         $place = DB::table('place')->where('id',$id)->first();
         return view('place.register1')->with(compact('place'));
+    }
+
+
+    public function testform(Request $request)
+    {
+
+        //print_r($request->all());
+        $name=$request->input('name');
+        foreach ($name as $k=>$v)
+        {
+            echo "<br> Sno $k and Value= $v";
+        }
     }
 
 

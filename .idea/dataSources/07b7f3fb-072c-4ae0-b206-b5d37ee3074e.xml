@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="chit_fund@localhost">
-  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.16">
+  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.17">
     <root id="1">
       <ServerVersion>10.4.8</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1318,151 +1318,134 @@
     </collation>
     <table id="331" parent="2" name="categories"/>
     <table id="332" parent="2" name="customer"/>
-    <table id="333" parent="2" name="place"/>
-    <table id="334" parent="2" name="transaction"/>
-    <column id="335" parent="331" name="id">
+    <table id="333" parent="2" name="item_master"/>
+    <table id="334" parent="2" name="pawn"/>
+    <table id="335" parent="2" name="pawn_item_detail"/>
+    <table id="336" parent="2" name="place"/>
+    <table id="337" parent="2" name="transaction"/>
+    <column id="338" parent="331" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="331" name="name">
+    <column id="339" parent="331" name="name">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="337" parent="331" name="PRIMARY">
+    <key id="340" parent="331" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="338" parent="332" name="id">
+    <column id="341" parent="332" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="332" name="code">
+    <column id="342" parent="332" name="code">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="332" name="name">
+    <column id="343" parent="332" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="332" name="father_name">
+    <column id="344" parent="332" name="father_name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="332" name="family_name">
+    <column id="345" parent="332" name="family_name">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="332" name="mobile">
+    <column id="346" parent="332" name="mobile">
       <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="344" parent="332" name="address">
+    <column id="347" parent="332" name="address">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="332" name="place">
+    <column id="348" parent="332" name="place">
       <Position>8</Position>
       <DataType>int(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="332" name="referer_name">
+    <column id="349" parent="332" name="referer_name">
       <Position>9</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="332" name="referer_mobile">
+    <column id="350" parent="332" name="referer_mobile">
       <Position>10</Position>
       <DataType>varchar(30)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="348" parent="332" name="remerks">
+    <column id="351" parent="332" name="remerks">
       <Position>11</Position>
       <DataType>varchar(1000)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="332" name="created_at">
+    <column id="352" parent="332" name="created_at">
       <Position>12</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="350" parent="332" name="customer_place_id_fk">
+    <index id="353" parent="332" name="customer_place_id_fk">
       <ColNames>place</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="351" parent="332" name="PRIMARY">
+    <key id="354" parent="332" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="352" parent="332" name="customer_place_id_fk">
+    <foreign-key id="355" parent="332" name="customer_place_id_fk">
       <ColNames>place</ColNames>
       <RefTableName>place</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="353" parent="333" name="id">
+    <column id="356" parent="333" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="354" parent="333" name="short_code">
+    <column id="357" parent="333" name="description">
       <Position>2</Position>
-      <DataType>varchar(10)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="355" parent="333" name="name">
+    <column id="358" parent="333" name="status">
       <Position>3</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="356" parent="333" name="status">
-      <Position>4</Position>
       <DataType>enum(&apos;active&apos;, &apos;inactive&apos;)|0e</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="357" parent="333" name="place_short_code_uindex">
-      <ColNames>short_code</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
-    <key id="358" parent="333" name="PRIMARY">
+    <key id="359" parent="333" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
-    </key>
-    <key id="359" parent="333" name="place_short_code_uindex">
-      <ColNames>short_code</ColNames>
-      <UnderlyingIndexName>place_short_code_uindex</UnderlyingIndexName>
     </key>
     <column id="360" parent="334" name="id">
       <Position>1</Position>
@@ -1476,46 +1459,232 @@
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="362" parent="334" name="plug_id">
+    <column id="362" parent="334" name="item_desc">
       <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="363" parent="334" name="type">
+    <column id="363" parent="334" name="g_weight">
       <Position>4</Position>
-      <DataType>enum(&apos;p&apos;, &apos;a&apos;, &apos;s&apos;, &apos;r&apos;, &apos;i&apos;)|0e</DataType>
+      <DataType>decimal(10,3 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="364" parent="334" name="date">
+    <column id="364" parent="334" name="weight_deduction">
       <Position>5</Position>
+      <DataType>decimal(10,3 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="365" parent="334" name="net_weight">
+      <Position>6</Position>
+      <DataType>decimal(10,3 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="366" parent="334" name="pdate">
+      <Position>7</Position>
+      <DataType>datetime|0s</DataType>
+      <DefaultExpression>current_timestamp()</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="367" parent="334" name="rdate">
+      <Position>8</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="365" parent="334" name="amount">
-      <Position>6</Position>
+    <column id="368" parent="334" name="amount">
+      <Position>9</Position>
       <DataType>decimal(15,2 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="366" parent="334" name="total_amount">
-      <Position>7</Position>
-      <DataType>decimal(15,2 digit)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="367" parent="334" name="status">
-      <Position>8</Position>
+    <column id="369" parent="334" name="status">
+      <Position>10</Position>
       <DataType>enum(&apos;active&apos;, &apos;inactive&apos;)|0e</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="368" parent="334" name="transaction_customer_id_fk">
+    <index id="370" parent="334" name="pawn_customer_id_fk">
       <ColNames>customer_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="369" parent="334" name="PRIMARY">
+    <key id="371" parent="334" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="370" parent="334" name="transaction_customer_id_fk">
+    <foreign-key id="372" parent="334" name="pawn_customer_id_fk">
+      <ColNames>customer_id</ColNames>
+      <RefTableName>customer</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="373" parent="335" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="374" parent="335" name="pawn_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="375" parent="335" name="item_code">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="376" parent="335" name="item_desc">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="377" parent="335" name="count">
+      <Position>5</Position>
+      <DataType>decimal(5,3 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="378" parent="335" name="weight">
+      <Position>6</Position>
+      <DataType>decimal(10,3 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="379" parent="335" name="weight_deduct">
+      <Position>7</Position>
+      <DataType>decimal(10,3 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="380" parent="335" name="net_weight">
+      <Position>8</Position>
+      <DataType>decimal(10,3 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="381" parent="335" name="purity">
+      <Position>9</Position>
+      <DataType>decimal(6,3 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="382" parent="335" name="pure">
+      <Position>10</Position>
+      <DataType>decimal(10,3 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="383" parent="335" name="comments">
+      <Position>11</Position>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="384" parent="335" name="pawn_item_detail_pawn_id_fk">
+      <ColNames>pawn_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="385" parent="335" name="pawn_item_detail_item_master_id_fk">
+      <ColNames>item_code</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="386" parent="335" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="387" parent="335" name="pawn_item_detail_pawn_id_fk">
+      <ColNames>pawn_id</ColNames>
+      <RefTableName>pawn</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="388" parent="335" name="pawn_item_detail_item_master_id_fk">
+      <ColNames>item_code</ColNames>
+      <RefTableName>item_master</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="389" parent="336" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="390" parent="336" name="short_code">
+      <Position>2</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="391" parent="336" name="name">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="392" parent="336" name="status">
+      <Position>4</Position>
+      <DataType>enum(&apos;active&apos;, &apos;inactive&apos;)|0e</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="393" parent="336" name="place_short_code_uindex">
+      <ColNames>short_code</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="394" parent="336" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="395" parent="336" name="place_short_code_uindex">
+      <ColNames>short_code</ColNames>
+      <UnderlyingIndexName>place_short_code_uindex</UnderlyingIndexName>
+    </key>
+    <column id="396" parent="337" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="397" parent="337" name="customer_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="398" parent="337" name="plug_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="399" parent="337" name="type">
+      <Position>4</Position>
+      <DataType>enum(&apos;p&apos;, &apos;a&apos;, &apos;s&apos;, &apos;r&apos;, &apos;i&apos;)|0e</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="400" parent="337" name="date">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="401" parent="337" name="amount">
+      <Position>6</Position>
+      <DataType>decimal(15,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="402" parent="337" name="total_amount">
+      <Position>7</Position>
+      <DataType>decimal(15,2 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="403" parent="337" name="status">
+      <Position>8</Position>
+      <DataType>enum(&apos;active&apos;, &apos;inactive&apos;)|0e</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="404" parent="337" name="transaction_customer_id_fk">
+      <ColNames>customer_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="405" parent="337" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="406" parent="337" name="transaction_customer_id_fk">
       <ColNames>customer_id</ColNames>
       <RefTableName>customer</RefTableName>
       <RefColNames>id</RefColNames>

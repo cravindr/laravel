@@ -1,5 +1,12 @@
-@extends('themes.theme1');
+@extends('themes.adminlte');
 {{--@include('place.edit')--}}
+
+@section('customer-menu','active')
+@section('menu-open-customer','menu-open')
+@section('customer-list','active')
+@section('customer-list-color','text-info')
+@section('breadcrumb','Customer List')
+@section('title','Customer List')
 
 @section('css')
     <link href="{{asset('asset/DataTables/datatables.min.css')}}">

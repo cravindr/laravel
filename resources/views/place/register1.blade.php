@@ -1,4 +1,11 @@
-@extends('themes.theme1');
+@extends('themes.adminlte');
+
+@section('place-menu','active')
+@section('menu-open-place','menu-open')
+@section('place-list','active')
+@section('place-list-color','text-info')
+@section('breadcrumb','Update Place ')
+@section('title','Update Place ')
 
 @section('css')
 @endsection
@@ -22,10 +29,11 @@
 
 <div class="row">
     <div class="col-lg-4 offset-lg-4">
-        <form action="{{URL::to('saveplace')}}" method="post">
+        <form action="{{URL::to('updateplace')}}" method="post">
             @csrf
             <div class="form-group">
                 <label>Short Code</label>
+                <input type="hidden" name="id" value="{{$place->id}}">
                 <input type="text" name="short_code" class="form-control" value="{{ $place->short_code }}" placeholder="Please Enter Short Code eg. PER">
             </div>
             <div class="form-group">
